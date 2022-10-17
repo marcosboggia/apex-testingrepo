@@ -41,6 +41,7 @@ global class ExampleClass extends Exception {
             for (Account a : Trigger.old) {
                 if (a.name != 'okToDelete') {
                     a.addError('You can\'t delete this record!');
+                }
             }
         }
     }
